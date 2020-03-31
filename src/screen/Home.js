@@ -29,7 +29,7 @@ class Home extends React.Component {
       super();
       this.state = {
          naik: false,
-         isLoading: false,
+         isLoading: true,
          homeData: null,
       };
    }

@@ -93,13 +93,13 @@ class Login extends React.Component {
                <Text style={styles.textInputTitle}>Email address</Text>
                <TextInput 
                   style={styles.textInputStyle}
-                  onChangeText={(text)=> this.setState({value: text})}
+                  onChangeText={(text)=> this.setState({email: text})}
                   value={this.state.email}
                />
                <Text style={styles.textInputTitle}>Password</Text>
                <TextInput 
                   style={styles.textInputStyle}
-                  onChangeText={(text)=> this.setState({value: text})}
+                  onChangeText={(text)=> this.setState({password: text})}
                   value={this.state.password}
                />
                <TouchableOpacity onPress={()=> this.onPressLogin()} style={styles.btnLogin}>
