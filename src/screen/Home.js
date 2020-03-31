@@ -76,7 +76,9 @@ class Home extends React.Component {
          <ImageBackground source={require('../assets/BackgroundHome.jpg')} style={styles.imageBackground}>
             <Loader show={this.state.isLoading} />
             <View style={[styles.content1, {flex: naik ? 0.35 : 0.65}]}>
-               <Image source={require('../assets/NavDrawerWhite.png')} style={styles.icon} />
+               <TouchableOpacity>
+                  <Image source={require('../assets/NavDrawerWhite.png')} style={styles.icon} />
+               </TouchableOpacity>
                <Text style={styles.titleStyle}>{homeData && homeData.salam}</Text>
                <Text style={styles.titleStyle}>{homeData && homeData.username}</Text>
                <Text style={styles.titleStyle}>{homeData && convertCurrency(homeData.balance, 'IDR ')}</Text>
@@ -122,7 +124,7 @@ class Home extends React.Component {
    };
 
    handleBackButton = () => {
-      // return 
+      return this.props.navigation.navigate('Main')
    }
 
 };
