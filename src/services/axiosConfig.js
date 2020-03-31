@@ -8,7 +8,7 @@ const API = async (
   },
 ) => {
   const request = {
-    baseURL: 'https://dev.marlinbooking.co.id/',
+    baseURL: 'http://maxxapi.technopartner.rocks/',
     method: options.method,
     timeout: 100000,
     url,

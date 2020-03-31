@@ -19,8 +19,8 @@ const App = () => {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <StatusBar
-          barStyle="light-content"
-          backgroundColor='aqua'
+          barStyle='dark-content'
+          backgroundColor='rgb(174,120,92)'
         />
         <SafeAreaView style={styles.container}>
           <RootStack />
@@ -33,7 +33,6 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'aqua',
   },
 });
 
